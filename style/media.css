@@ -16,6 +16,10 @@
     .about__work {
         background: var(--main-color);
     }
+
+    .list-group-item {
+        box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    }
 }
 
 @media(max-width:1440px) {
@@ -28,13 +32,17 @@
         left: 30px;
     }
 }
+
 @media(max-width:1100px) {
     .about__work {
         transform: translate(0);
     }
 }
-@media(max-width:991px) {
 
+@media(max-width:991px) {
+    .my-work::before,
+    .about::after,
+    .about::before,
     .header__bottom::before,
     .header__bottom::after,
     .header__nav::before,
@@ -49,36 +57,45 @@
     .about__img>img {
         width: 100%;
     }
-    .about__work{
+
+    .about__work {
         padding: 15px 20px;
     }
-    .about__work::before{
+
+    .about__work::before {
         width: 30px;
         height: 30px;
         font-size: 16px;
     }
-    .about__title{
+
+    .about__title {
         font-size: 30px;
     }
-    .about__desc{
+
+    .about__desc {
         padding: 15px;
     }
-    .about__text{
+
+    .about__text {
         text-align: justify;
     }
-    .about__btn{
+
+    .about__btn {
         margin: 0;
         width: 100%;
     }
 }
+
 @media(max-width:375px) {
     .header__title {
         font-size: 33px;
         line-height: 40px;
     }
+
     .header__btn {
         width: 100%;
     }
+
     .header__bottom {
         padding-top: 0;
     }
@@ -93,7 +110,8 @@
         font-size: 30px;
         line-height: 36px;
     }
-    .about__title{
+
+    .about__title {
         font-size: 27px;
         margin-bottom: 15px;
     }
